@@ -1,0 +1,108 @@
+            /* Container utama */
+            #testimoni {
+                width: 100%;
+                height: 300px;
+                /* Batasi tinggi untuk menampilkan beberapa testimonial */
+                overflow: hidden;
+                /* Sembunyikan elemen di luar area */
+                position: relative;
+                margin-bottom: 20px;
+                padding: 20px;
+                background: #f9f9f9;
+                /* Warna latar belakang */
+                border-radius: 10px;
+                /* Sudut melengkung */
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                /* Efek bayangan */
+            }
+
+            /* Kontainer untuk testimonial */
+            .testimoni-container {
+                display: flex;
+                flex-direction: column;
+                animation: scrollUp 20s linear infinite;
+                /* Animasi scrolling */
+            }
+
+            /* Elemen Testimonial */
+            .tests {
+                display: flex;
+                justify-content: center;
+                /* Rata tengah konten */
+                margin-bottom: 15px;
+                /* Jarak antar testimonial */
+            }
+
+            /* Card untuk testimonial */
+            .test-card {
+                width: 100%;
+                /* Sesuaikan lebar card */
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                border: 1px solid #ddd;
+                /* Batas luar */
+                border-radius: 8px;
+                /* Sudut melengkung */
+                background-color: #fff;
+                /* Warna latar dalam */
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                /* Bayangan */
+            }
+
+            /* Efek hover pada card */
+            .test-card:hover {
+                transform: scale(1.03);
+                /* Perbesar sedikit */
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+                /* Bayangan lebih besar */
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                /* Efek transisi */
+            }
+
+
+            /* Gambar profil */
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                /* Membuat gambar bulat */
+                border: 2px solid #007bff;
+                /* Border dengan warna */
+            }
+
+            /* Info testimonial */
+            .testimonial-info {
+                flex: 1;
+            }
+
+            .testimonial-info .name {
+                font-weight: bold;
+                font-size: 16px;
+                color: #333;
+            }
+
+            .testimonial-info .text {
+                font-size: 14px;
+                color: #555;
+            }
+
+            /* Styling teks Successful */
+            .successful {
+                font-size: 16px !important;
+                /* Ukuran font lebih besar dengan prioritas tinggi */
+                font-weight: bold;
+                /* Membuat teks tebal */
+                color: green;
+                /* Warna hijau */
+                display: inline-block;
+                /* Memastikan elemen tetap dalam satu baris */
+            }
+
+            .successful:hover {
+                color: darkgreen;
+                /* Ganti warna hijau lebih gelap saat hover */
+                text-decoration: underline;
+                /* Tambahkan garis bawah saat hover */
+            }
