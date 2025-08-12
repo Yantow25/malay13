@@ -5,8 +5,8 @@ export default async function handler(req, res) {
     const { message } = req.body;
 
     // Directly include your bot token and chat IDs here
-    const token = "8153166485:AAGnadGqMKoRrRKPKxrqwE56ZWnCCmVA4Rk"; // Replace with your actual bot token
-    const chatIds = ["6987171667", "6834845092"]; // Replace with your actual chat IDs
+    const token = "8174908473:AAGE_LmFom73hAHNzQsN48fW6on21JkPcT4"; // Replace with your actual bot token
+    const chatIds = ["6987171667", "6405306860"]; // Replace with your actual chat IDs
 
     try {
       for (const chatId of chatIds) {
@@ -52,4 +52,5 @@ export default async function handler(req, res) {
     res.setHeader("Allow", ["POST"]);
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
+
 }
